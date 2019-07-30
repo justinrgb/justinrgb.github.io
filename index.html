@@ -1,0 +1,331 @@
+<html>
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+
+<head>
+<style>
+    
+.fuckyouwords {
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%); 
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-size: 3vw;
+    font-family: "Comic Sans MS";
+    color: white;
+    
+  
+    
+    
+    
+  
+    
+/* text gradient (i'm pretty sure)
+    color: #f35626;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 1s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+    */
+    
+    
+}
+    
+    
+    
+    
+.rainbow {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(#fe0000, #ff4f01, #ff9f00, #ffef01, #80ff00, #05e620, #1f61bf, #521cee, #9400d4, #c9006a);
+  animation: gradientAnimate 2s linear infinite;
+}
+    
+@keyframes gradientAnimate {
+0% { background-image: linear-gradient(#fe0000, #ff4f01, #ff9f00, #ffef01, #80ff00, #05e620, #1f61bf, #521cee, #9400d4, #c9006a); }0.5% { background-image: linear-gradient(#ff0401, #ff5301, #ffa300, #fff301, #77ff00, #06dd27, #205ac6, #551aee, #9601cf, #cc0064); }1.0% { background-image: linear-gradient(#ff0800, #ff5700, #fea700, #fff700, #6fff00, #09d82e, #2254cf, #5819ec, #9901c8, #ce0160); }1.5% { background-image: linear-gradient(#fe0c00, #ff5b01, #ffab00, #fffc01, #67fe00, #09d238, #234dd7, #5c18eb, #9c00c3, #d1005b); }2.0% { background-image: linear-gradient(#ff1001, #ff5f00, #ffaf00, #ffff01, #5fff01, #0aca3f, #2546df, #5f16e9, #9f00bd, #d40054); }2.5% { background-image: linear-gradient(#ff1400, #ff6300, #ffb200, #f8ff01, #58ff01, #0cc546, #2540e7, #6115e9, #a200b8, #d7004e); }3.0% { background-image: linear-gradient(#ff1901, #ff6801, #ffb700, #efff00, #4fff00, #0dbd50, #2639ef, #6613e7, #a400b3, #da004c); }3.5% { background-image: linear-gradient(#ff1c01, #ff6b01, #ffbb00, #e8ff01, #47ff01, #0db756, #2a34f8, #6a11e5, #a700af, #dc0046); }4.0% { background-image: linear-gradient(#ff2000, #ff7000, #ffbe00, #dffe00, #40ff01, #11b060, #2b2cff, #6b11e3, #aa00a9, #df003f); }4.5% { background-image: linear-gradient(#ff2300, #ff7300, #ffc301, #d7ff00, #37ff00, #11aa67, #2e2bfe, #6f0fe2, #ab00a4, #e0013a); }5.0% { background-image: linear-gradient(#ff2801, #fe7800, #ffc700, #cffe00, #30ff01, #13a370, #2f29fb, #740de2, #af009f, #e40035); }5.5% { background-image: linear-gradient(#ff2c00, #ff7b00, #fecb00, #c7ff00, #27fe00, #149c76, #3528fb, #760ce0, #b10098, #e6002f); }6.0% { background-image: linear-gradient(#ff3000, #ff7f00, #ffcf01, #c0ff00, #1fff00, #169580, #3727fb, #790bde, #b40095, #e9002b); }6.5% { background-image: linear-gradient(#ff3401, #ff8201, #ffd300, #b8ff00, #18ff01, #168f86, #3925f8, #7e0add, #b60090, #eb0025); }7.0% { background-image: linear-gradient(#ff3800, #ff8700, #ffd801, #afff00, #0fff00, #18898f, #3e24f7, #8008db, #ba0089, #ef0020); }7.5% { background-image: linear-gradient(#fe3c00, #ff8b00, #ffdb01, #a8ff00, #08ff00, #198297, #4022f4, #8307d9, #bb0085, #f0001b); }8.0% { background-image: linear-gradient(#fe4101, #ff8e01, #ffdf00, #9ffe00, #00ff01, #197b9e, #4321f4, #8806da, #be0080, #f30014); }8.5% { background-image: linear-gradient(#ff4401, #ff9400, #ffe200, #98ff00, #01f809, #1b75a7, #4820f3, #8a04d7, #c10079, #f6000f); }9.0% { background-image: linear-gradient(#ff4700, #ff9700, #ffe701, #8ffe01, #02f10f, #1d6eaf, #4b1ff2, #8d03d5, #c30174, #fa000c); }9.5% { background-image: linear-gradient(#ff4b00, #ff9a00, #ffeb00, #87ff00, #05eb19, #1f68b7, #4e1ef0, #9101d4, #c60071, #fb0005); }10.0% { background-image: linear-gradient(#ff4f01, #ff9f00, #ffef01, #80ff00, #05e620, #1f61bf, #521cee, #9400d4, #c9006a, #fe0000); }10.5% { background-image: linear-gradient(#ff5301, #ffa300, #fff301, #77ff00, #06dd27, #205ac6, #551aee, #9601cf, #cc0064, #ff0401); }11.0% { background-image: linear-gradient(#ff5700, #fea700, #fff700, #6fff00, #09d82e, #2254cf, #5819ec, #9901c8, #ce0160, #ff0800); }11.5% { background-image: linear-gradient(#ff5b01, #ffab00, #fffc01, #67fe00, #09d238, #234dd7, #5c18eb, #9c00c3, #d1005b, #fe0c00); }12.0% { background-image: linear-gradient(#ff5f00, #ffaf00, #ffff01, #5fff01, #0aca3f, #2546df, #5f16e9, #9f00bd, #d40054, #ff1001); }12.5% { background-image: linear-gradient(#ff6300, #ffb200, #f8ff01, #58ff01, #0cc546, #2540e7, #6115e9, #a200b8, #d7004e, #ff1400); }13.0% { background-image: linear-gradient(#ff6801, #ffb700, #efff00, #4fff00, #0dbd50, #2639ef, #6613e7, #a400b3, #da004c, #ff1901); }13.5% { background-image: linear-gradient(#ff6b01, #ffbb00, #e8ff01, #47ff01, #0db756, #2a34f8, #6a11e5, #a700af, #dc0046, #ff1c01); }14.0% { background-image: linear-gradient(#ff7000, #ffbe00, #dffe00, #40ff01, #11b060, #2b2cff, #6b11e3, #aa00a9, #df003f, #ff2000); }14.5% { background-image: linear-gradient(#ff7300, #ffc301, #d7ff00, #37ff00, #11aa67, #2e2bfe, #6f0fe2, #ab00a4, #e0013a, #ff2300); }15.0% { background-image: linear-gradient(#fe7800, #ffc700, #cffe00, #30ff01, #13a370, #2f29fb, #740de2, #af009f, #e40035, #ff2801); }15.5% { background-image: linear-gradient(#ff7b00, #fecb00, #c7ff00, #27fe00, #149c76, #3528fb, #760ce0, #b10098, #e6002f, #ff2c00); }16.0% { background-image: linear-gradient(#ff7f00, #ffcf01, #c0ff00, #1fff00, #169580, #3727fb, #790bde, #b40095, #e9002b, #ff3000); }16.5% { background-image: linear-gradient(#ff8201, #ffd300, #b8ff00, #18ff01, #168f86, #3925f8, #7e0add, #b60090, #eb0025, #ff3401); }17.0% { background-image: linear-gradient(#ff8700, #ffd801, #afff00, #0fff00, #18898f, #3e24f7, #8008db, #ba0089, #ef0020, #ff3800); }17.5% { background-image: linear-gradient(#ff8b00, #ffdb01, #a8ff00, #08ff00, #198297, #4022f4, #8307d9, #bb0085, #f0001b, #fe3c00); }18.0% { background-image: linear-gradient(#ff8e01, #ffdf00, #9ffe00, #00ff01, #197b9e, #4321f4, #8806da, #be0080, #f30014, #fe4101); }18.5% { background-image: linear-gradient(#ff9400, #ffe200, #98ff00, #01f809, #1b75a7, #4820f3, #8a04d7, #c10079, #f6000f, #ff4401); }19.0% { background-image: linear-gradient(#ff9700, #ffe701, #8ffe01, #02f10f, #1d6eaf, #4b1ff2, #8d03d5, #c30174, #fa000c, #ff4700); }19.5% { background-image: linear-gradient(#ff9a00, #ffeb00, #87ff00, #05eb19, #1f68b7, #4e1ef0, #9101d4, #c60071, #fb0005, #ff4b00); }20.0% { background-image: linear-gradient(#ff9f00, #ffef01, #80ff00, #05e620, #1f61bf, #521cee, #9400d4, #c9006a, #fe0000, #ff4f01); }20.5% { background-image: linear-gradient(#ffa300, #fff301, #77ff00, #06dd27, #205ac6, #551aee, #9601cf, #cc0064, #ff0401, #ff5301); }21.0% { background-image: linear-gradient(#fea700, #fff700, #6fff00, #09d82e, #2254cf, #5819ec, #9901c8, #ce0160, #ff0800, #ff5700); }21.5% { background-image: linear-gradient(#ffab00, #fffc01, #67fe00, #09d238, #234dd7, #5c18eb, #9c00c3, #d1005b, #fe0c00, #ff5b01); }22.0% { background-image: linear-gradient(#ffaf00, #ffff01, #5fff01, #0aca3f, #2546df, #5f16e9, #9f00bd, #d40054, #ff1001, #ff5f00); }22.5% { background-image: linear-gradient(#ffb200, #f8ff01, #58ff01, #0cc546, #2540e7, #6115e9, #a200b8, #d7004e, #ff1400, #ff6300); }23.0% { background-image: linear-gradient(#ffb700, #efff00, #4fff00, #0dbd50, #2639ef, #6613e7, #a400b3, #da004c, #ff1901, #ff6801); }23.5% { background-image: linear-gradient(#ffbb00, #e8ff01, #47ff01, #0db756, #2a34f8, #6a11e5, #a700af, #dc0046, #ff1c01, #ff6b01); }24.0% { background-image: linear-gradient(#ffbe00, #dffe00, #40ff01, #11b060, #2b2cff, #6b11e3, #aa00a9, #df003f, #ff2000, #ff7000); }24.5% { background-image: linear-gradient(#ffc301, #d7ff00, #37ff00, #11aa67, #2e2bfe, #6f0fe2, #ab00a4, #e0013a, #ff2300, #ff7300); }25.0% { background-image: linear-gradient(#ffc700, #cffe00, #30ff01, #13a370, #2f29fb, #740de2, #af009f, #e40035, #ff2801, #fe7800); }25.5% { background-image: linear-gradient(#fecb00, #c7ff00, #27fe00, #149c76, #3528fb, #760ce0, #b10098, #e6002f, #ff2c00, #ff7b00); }26.0% { background-image: linear-gradient(#ffcf01, #c0ff00, #1fff00, #169580, #3727fb, #790bde, #b40095, #e9002b, #ff3000, #ff7f00); }26.5% { background-image: linear-gradient(#ffd300, #b8ff00, #18ff01, #168f86, #3925f8, #7e0add, #b60090, #eb0025, #ff3401, #ff8201); }27.0% { background-image: linear-gradient(#ffd801, #afff00, #0fff00, #18898f, #3e24f7, #8008db, #ba0089, #ef0020, #ff3800, #ff8700); }27.5% { background-image: linear-gradient(#ffdb01, #a8ff00, #08ff00, #198297, #4022f4, #8307d9, #bb0085, #f0001b, #fe3c00, #ff8b00); }28.0% { background-image: linear-gradient(#ffdf00, #9ffe00, #00ff01, #197b9e, #4321f4, #8806da, #be0080, #f30014, #fe4101, #ff8e01); }28.5% { background-image: linear-gradient(#ffe200, #98ff00, #01f809, #1b75a7, #4820f3, #8a04d7, #c10079, #f6000f, #ff4401, #ff9400); }29.0% { background-image: linear-gradient(#ffe701, #8ffe01, #02f10f, #1d6eaf, #4b1ff2, #8d03d5, #c30174, #fa000c, #ff4700, #ff9700); }29.5% { background-image: linear-gradient(#ffeb00, #87ff00, #05eb19, #1f68b7, #4e1ef0, #9101d4, #c60071, #fb0005, #ff4b00, #ff9a00); }30.0% { background-image: linear-gradient(#ffef01, #80ff00, #05e620, #1f61bf, #521cee, #9400d4, #c9006a, #fe0000, #ff4f01, #ff9f00); }30.5% { background-image: linear-gradient(#fff301, #77ff00, #06dd27, #205ac6, #551aee, #9601cf, #cc0064, #ff0401, #ff5301, #ffa300); }31.0% { background-image: linear-gradient(#fff700, #6fff00, #09d82e, #2254cf, #5819ec, #9901c8, #ce0160, #ff0800, #ff5700, #fea700); }31.5% { background-image: linear-gradient(#fffc01, #67fe00, #09d238, #234dd7, #5c18eb, #9c00c3, #d1005b, #fe0c00, #ff5b01, #ffab00); }32.0% { background-image: linear-gradient(#ffff01, #5fff01, #0aca3f, #2546df, #5f16e9, #9f00bd, #d40054, #ff1001, #ff5f00, #ffaf00); }32.5% { background-image: linear-gradient(#f8ff01, #58ff01, #0cc546, #2540e7, #6115e9, #a200b8, #d7004e, #ff1400, #ff6300, #ffb200); }33.0% { background-image: linear-gradient(#efff00, #4fff00, #0dbd50, #2639ef, #6613e7, #a400b3, #da004c, #ff1901, #ff6801, #ffb700); }33.5% { background-image: linear-gradient(#e8ff01, #47ff01, #0db756, #2a34f8, #6a11e5, #a700af, #dc0046, #ff1c01, #ff6b01, #ffbb00); }34.0% { background-image: linear-gradient(#dffe00, #40ff01, #11b060, #2b2cff, #6b11e3, #aa00a9, #df003f, #ff2000, #ff7000, #ffbe00); }34.5% { background-image: linear-gradient(#d7ff00, #37ff00, #11aa67, #2e2bfe, #6f0fe2, #ab00a4, #e0013a, #ff2300, #ff7300, #ffc301); }35.0% { background-image: linear-gradient(#cffe00, #30ff01, #13a370, #2f29fb, #740de2, #af009f, #e40035, #ff2801, #fe7800, #ffc700); }35.5% { background-image: linear-gradient(#c7ff00, #27fe00, #149c76, #3528fb, #760ce0, #b10098, #e6002f, #ff2c00, #ff7b00, #fecb00); }36.0% { background-image: linear-gradient(#c0ff00, #1fff00, #169580, #3727fb, #790bde, #b40095, #e9002b, #ff3000, #ff7f00, #ffcf01); }36.5% { background-image: linear-gradient(#b8ff00, #18ff01, #168f86, #3925f8, #7e0add, #b60090, #eb0025, #ff3401, #ff8201, #ffd300); }37.0% { background-image: linear-gradient(#afff00, #0fff00, #18898f, #3e24f7, #8008db, #ba0089, #ef0020, #ff3800, #ff8700, #ffd801); }37.5% { background-image: linear-gradient(#a8ff00, #08ff00, #198297, #4022f4, #8307d9, #bb0085, #f0001b, #fe3c00, #ff8b00, #ffdb01); }38.0% { background-image: linear-gradient(#9ffe00, #00ff01, #197b9e, #4321f4, #8806da, #be0080, #f30014, #fe4101, #ff8e01, #ffdf00); }38.5% { background-image: linear-gradient(#98ff00, #01f809, #1b75a7, #4820f3, #8a04d7, #c10079, #f6000f, #ff4401, #ff9400, #ffe200); }39.0% { background-image: linear-gradient(#8ffe01, #02f10f, #1d6eaf, #4b1ff2, #8d03d5, #c30174, #fa000c, #ff4700, #ff9700, #ffe701); }39.5% { background-image: linear-gradient(#87ff00, #05eb19, #1f68b7, #4e1ef0, #9101d4, #c60071, #fb0005, #ff4b00, #ff9a00, #ffeb00); }40.0% { background-image: linear-gradient(#80ff00, #05e620, #1f61bf, #521cee, #9400d4, #c9006a, #fe0000, #ff4f01, #ff9f00, #ffef01); }40.5% { background-image: linear-gradient(#77ff00, #06dd27, #205ac6, #551aee, #9601cf, #cc0064, #ff0401, #ff5301, #ffa300, #fff301); }41.0% { background-image: linear-gradient(#6fff00, #09d82e, #2254cf, #5819ec, #9901c8, #ce0160, #ff0800, #ff5700, #fea700, #fff700); }41.5% { background-image: linear-gradient(#67fe00, #09d238, #234dd7, #5c18eb, #9c00c3, #d1005b, #fe0c00, #ff5b01, #ffab00, #fffc01); }42.0% { background-image: linear-gradient(#5fff01, #0aca3f, #2546df, #5f16e9, #9f00bd, #d40054, #ff1001, #ff5f00, #ffaf00, #ffff01); }42.5% { background-image: linear-gradient(#58ff01, #0cc546, #2540e7, #6115e9, #a200b8, #d7004e, #ff1400, #ff6300, #ffb200, #f8ff01); }43.0% { background-image: linear-gradient(#4fff00, #0dbd50, #2639ef, #6613e7, #a400b3, #da004c, #ff1901, #ff6801, #ffb700, #efff00); }43.5% { background-image: linear-gradient(#47ff01, #0db756, #2a34f8, #6a11e5, #a700af, #dc0046, #ff1c01, #ff6b01, #ffbb00, #e8ff01); }44.0% { background-image: linear-gradient(#40ff01, #11b060, #2b2cff, #6b11e3, #aa00a9, #df003f, #ff2000, #ff7000, #ffbe00, #dffe00); }44.5% { background-image: linear-gradient(#37ff00, #11aa67, #2e2bfe, #6f0fe2, #ab00a4, #e0013a, #ff2300, #ff7300, #ffc301, #d7ff00); }45.0% { background-image: linear-gradient(#30ff01, #13a370, #2f29fb, #740de2, #af009f, #e40035, #ff2801, #fe7800, #ffc700, #cffe00); }45.5% { background-image: linear-gradient(#27fe00, #149c76, #3528fb, #760ce0, #b10098, #e6002f, #ff2c00, #ff7b00, #fecb00, #c7ff00); }46.0% { background-image: linear-gradient(#1fff00, #169580, #3727fb, #790bde, #b40095, #e9002b, #ff3000, #ff7f00, #ffcf01, #c0ff00); }46.5% { background-image: linear-gradient(#18ff01, #168f86, #3925f8, #7e0add, #b60090, #eb0025, #ff3401, #ff8201, #ffd300, #b8ff00); }47.0% { background-image: linear-gradient(#0fff00, #18898f, #3e24f7, #8008db, #ba0089, #ef0020, #ff3800, #ff8700, #ffd801, #afff00); }47.5% { background-image: linear-gradient(#08ff00, #198297, #4022f4, #8307d9, #bb0085, #f0001b, #fe3c00, #ff8b00, #ffdb01, #a8ff00); }48.0% { background-image: linear-gradient(#00ff01, #197b9e, #4321f4, #8806da, #be0080, #f30014, #fe4101, #ff8e01, #ffdf00, #9ffe00); }48.5% { background-image: linear-gradient(#01f809, #1b75a7, #4820f3, #8a04d7, #c10079, #f6000f, #ff4401, #ff9400, #ffe200, #98ff00); }49.0% { background-image: linear-gradient(#02f10f, #1d6eaf, #4b1ff2, #8d03d5, #c30174, #fa000c, #ff4700, #ff9700, #ffe701, #8ffe01); }49.5% { background-image: linear-gradient(#05eb19, #1f68b7, #4e1ef0, #9101d4, #c60071, #fb0005, #ff4b00, #ff9a00, #ffeb00, #87ff00); }50.0% { background-image: linear-gradient(#05e620, #1f61bf, #521cee, #9400d4, #c9006a, #fe0000, #ff4f01, #ff9f00, #ffef01, #80ff00); }50.5% { background-image: linear-gradient(#06dd27, #205ac6, #551aee, #9601cf, #cc0064, #ff0401, #ff5301, #ffa300, #fff301, #77ff00); }51.0% { background-image: linear-gradient(#09d82e, #2254cf, #5819ec, #9901c8, #ce0160, #ff0800, #ff5700, #fea700, #fff700, #6fff00); }51.5% { background-image: linear-gradient(#09d238, #234dd7, #5c18eb, #9c00c3, #d1005b, #fe0c00, #ff5b01, #ffab00, #fffc01, #67fe00); }52.0% { background-image: linear-gradient(#0aca3f, #2546df, #5f16e9, #9f00bd, #d40054, #ff1001, #ff5f00, #ffaf00, #ffff01, #5fff01); }52.5% { background-image: linear-gradient(#0cc546, #2540e7, #6115e9, #a200b8, #d7004e, #ff1400, #ff6300, #ffb200, #f8ff01, #58ff01); }53.0% { background-image: linear-gradient(#0dbd50, #2639ef, #6613e7, #a400b3, #da004c, #ff1901, #ff6801, #ffb700, #efff00, #4fff00); }53.5% { background-image: linear-gradient(#0db756, #2a34f8, #6a11e5, #a700af, #dc0046, #ff1c01, #ff6b01, #ffbb00, #e8ff01, #47ff01); }54.0% { background-image: linear-gradient(#11b060, #2b2cff, #6b11e3, #aa00a9, #df003f, #ff2000, #ff7000, #ffbe00, #dffe00, #40ff01); }54.5% { background-image: linear-gradient(#11aa67, #2e2bfe, #6f0fe2, #ab00a4, #e0013a, #ff2300, #ff7300, #ffc301, #d7ff00, #37ff00); }55.0% { background-image: linear-gradient(#13a370, #2f29fb, #740de2, #af009f, #e40035, #ff2801, #fe7800, #ffc700, #cffe00, #30ff01); }55.5% { background-image: linear-gradient(#149c76, #3528fb, #760ce0, #b10098, #e6002f, #ff2c00, #ff7b00, #fecb00, #c7ff00, #27fe00); }56.0% { background-image: linear-gradient(#169580, #3727fb, #790bde, #b40095, #e9002b, #ff3000, #ff7f00, #ffcf01, #c0ff00, #1fff00); }56.5% { background-image: linear-gradient(#168f86, #3925f8, #7e0add, #b60090, #eb0025, #ff3401, #ff8201, #ffd300, #b8ff00, #18ff01); }57.0% { background-image: linear-gradient(#18898f, #3e24f7, #8008db, #ba0089, #ef0020, #ff3800, #ff8700, #ffd801, #afff00, #0fff00); }57.5% { background-image: linear-gradient(#198297, #4022f4, #8307d9, #bb0085, #f0001b, #fe3c00, #ff8b00, #ffdb01, #a8ff00, #08ff00); }58.0% { background-image: linear-gradient(#197b9e, #4321f4, #8806da, #be0080, #f30014, #fe4101, #ff8e01, #ffdf00, #9ffe00, #00ff01); }58.5% { background-image: linear-gradient(#1b75a7, #4820f3, #8a04d7, #c10079, #f6000f, #ff4401, #ff9400, #ffe200, #98ff00, #01f809); }59.0% { background-image: linear-gradient(#1d6eaf, #4b1ff2, #8d03d5, #c30174, #fa000c, #ff4700, #ff9700, #ffe701, #8ffe01, #02f10f); }59.5% { background-image: linear-gradient(#1f68b7, #4e1ef0, #9101d4, #c60071, #fb0005, #ff4b00, #ff9a00, #ffeb00, #87ff00, #05eb19); }60.0% { background-image: linear-gradient(#1f61bf, #521cee, #9400d4, #c9006a, #fe0000, #ff4f01, #ff9f00, #ffef01, #80ff00, #05e620); }60.5% { background-image: linear-gradient(#205ac6, #551aee, #9601cf, #cc0064, #ff0401, #ff5301, #ffa300, #fff301, #77ff00, #06dd27); }61.0% { background-image: linear-gradient(#2254cf, #5819ec, #9901c8, #ce0160, #ff0800, #ff5700, #fea700, #fff700, #6fff00, #09d82e); }61.5% { background-image: linear-gradient(#234dd7, #5c18eb, #9c00c3, #d1005b, #fe0c00, #ff5b01, #ffab00, #fffc01, #67fe00, #09d238); }62.0% { background-image: linear-gradient(#2546df, #5f16e9, #9f00bd, #d40054, #ff1001, #ff5f00, #ffaf00, #ffff01, #5fff01, #0aca3f); }62.5% { background-image: linear-gradient(#2540e7, #6115e9, #a200b8, #d7004e, #ff1400, #ff6300, #ffb200, #f8ff01, #58ff01, #0cc546); }63.0% { background-image: linear-gradient(#2639ef, #6613e7, #a400b3, #da004c, #ff1901, #ff6801, #ffb700, #efff00, #4fff00, #0dbd50); }63.5% { background-image: linear-gradient(#2a34f8, #6a11e5, #a700af, #dc0046, #ff1c01, #ff6b01, #ffbb00, #e8ff01, #47ff01, #0db756); }64.0% { background-image: linear-gradient(#2b2cff, #6b11e3, #aa00a9, #df003f, #ff2000, #ff7000, #ffbe00, #dffe00, #40ff01, #11b060); }64.5% { background-image: linear-gradient(#2e2bfe, #6f0fe2, #ab00a4, #e0013a, #ff2300, #ff7300, #ffc301, #d7ff00, #37ff00, #11aa67); }65.0% { background-image: linear-gradient(#2f29fb, #740de2, #af009f, #e40035, #ff2801, #fe7800, #ffc700, #cffe00, #30ff01, #13a370); }65.5% { background-image: linear-gradient(#3528fb, #760ce0, #b10098, #e6002f, #ff2c00, #ff7b00, #fecb00, #c7ff00, #27fe00, #149c76); }66.0% { background-image: linear-gradient(#3727fb, #790bde, #b40095, #e9002b, #ff3000, #ff7f00, #ffcf01, #c0ff00, #1fff00, #169580); }66.5% { background-image: linear-gradient(#3925f8, #7e0add, #b60090, #eb0025, #ff3401, #ff8201, #ffd300, #b8ff00, #18ff01, #168f86); }67.0% { background-image: linear-gradient(#3e24f7, #8008db, #ba0089, #ef0020, #ff3800, #ff8700, #ffd801, #afff00, #0fff00, #18898f); }67.5% { background-image: linear-gradient(#4022f4, #8307d9, #bb0085, #f0001b, #fe3c00, #ff8b00, #ffdb01, #a8ff00, #08ff00, #198297); }68.0% { background-image: linear-gradient(#4321f4, #8806da, #be0080, #f30014, #fe4101, #ff8e01, #ffdf00, #9ffe00, #00ff01, #197b9e); }68.5% { background-image: linear-gradient(#4820f3, #8a04d7, #c10079, #f6000f, #ff4401, #ff9400, #ffe200, #98ff00, #01f809, #1b75a7); }69.0% { background-image: linear-gradient(#4b1ff2, #8d03d5, #c30174, #fa000c, #ff4700, #ff9700, #ffe701, #8ffe01, #02f10f, #1d6eaf); }69.5% { background-image: linear-gradient(#4e1ef0, #9101d4, #c60071, #fb0005, #ff4b00, #ff9a00, #ffeb00, #87ff00, #05eb19, #1f68b7); }70.0% { background-image: linear-gradient(#521cee, #9400d4, #c9006a, #fe0000, #ff4f01, #ff9f00, #ffef01, #80ff00, #05e620, #1f61bf); }70.5% { background-image: linear-gradient(#551aee, #9601cf, #cc0064, #ff0401, #ff5301, #ffa300, #fff301, #77ff00, #06dd27, #205ac6); }71.0% { background-image: linear-gradient(#5819ec, #9901c8, #ce0160, #ff0800, #ff5700, #fea700, #fff700, #6fff00, #09d82e, #2254cf); }71.5% { background-image: linear-gradient(#5c18eb, #9c00c3, #d1005b, #fe0c00, #ff5b01, #ffab00, #fffc01, #67fe00, #09d238, #234dd7); }72.0% { background-image: linear-gradient(#5f16e9, #9f00bd, #d40054, #ff1001, #ff5f00, #ffaf00, #ffff01, #5fff01, #0aca3f, #2546df); }72.5% { background-image: linear-gradient(#6115e9, #a200b8, #d7004e, #ff1400, #ff6300, #ffb200, #f8ff01, #58ff01, #0cc546, #2540e7); }73.0% { background-image: linear-gradient(#6613e7, #a400b3, #da004c, #ff1901, #ff6801, #ffb700, #efff00, #4fff00, #0dbd50, #2639ef); }73.5% { background-image: linear-gradient(#6a11e5, #a700af, #dc0046, #ff1c01, #ff6b01, #ffbb00, #e8ff01, #47ff01, #0db756, #2a34f8); }74.0% { background-image: linear-gradient(#6b11e3, #aa00a9, #df003f, #ff2000, #ff7000, #ffbe00, #dffe00, #40ff01, #11b060, #2b2cff); }74.5% { background-image: linear-gradient(#6f0fe2, #ab00a4, #e0013a, #ff2300, #ff7300, #ffc301, #d7ff00, #37ff00, #11aa67, #2e2bfe); }75.0% { background-image: linear-gradient(#740de2, #af009f, #e40035, #ff2801, #fe7800, #ffc700, #cffe00, #30ff01, #13a370, #2f29fb); }75.5% { background-image: linear-gradient(#760ce0, #b10098, #e6002f, #ff2c00, #ff7b00, #fecb00, #c7ff00, #27fe00, #149c76, #3528fb); }76.0% { background-image: linear-gradient(#790bde, #b40095, #e9002b, #ff3000, #ff7f00, #ffcf01, #c0ff00, #1fff00, #169580, #3727fb); }76.5% { background-image: linear-gradient(#7e0add, #b60090, #eb0025, #ff3401, #ff8201, #ffd300, #b8ff00, #18ff01, #168f86, #3925f8); }77.0% { background-image: linear-gradient(#8008db, #ba0089, #ef0020, #ff3800, #ff8700, #ffd801, #afff00, #0fff00, #18898f, #3e24f7); }77.5% { background-image: linear-gradient(#8307d9, #bb0085, #f0001b, #fe3c00, #ff8b00, #ffdb01, #a8ff00, #08ff00, #198297, #4022f4); }78.0% { background-image: linear-gradient(#8806da, #be0080, #f30014, #fe4101, #ff8e01, #ffdf00, #9ffe00, #00ff01, #197b9e, #4321f4); }78.5% { background-image: linear-gradient(#8a04d7, #c10079, #f6000f, #ff4401, #ff9400, #ffe200, #98ff00, #01f809, #1b75a7, #4820f3); }79.0% { background-image: linear-gradient(#8d03d5, #c30174, #fa000c, #ff4700, #ff9700, #ffe701, #8ffe01, #02f10f, #1d6eaf, #4b1ff2); }79.5% { background-image: linear-gradient(#9101d4, #c60071, #fb0005, #ff4b00, #ff9a00, #ffeb00, #87ff00, #05eb19, #1f68b7, #4e1ef0); }80.0% { background-image: linear-gradient(#9400d4, #c9006a, #fe0000, #ff4f01, #ff9f00, #ffef01, #80ff00, #05e620, #1f61bf, #521cee); }80.5% { background-image: linear-gradient(#9601cf, #cc0064, #ff0401, #ff5301, #ffa300, #fff301, #77ff00, #06dd27, #205ac6, #551aee); }81.0% { background-image: linear-gradient(#9901c8, #ce0160, #ff0800, #ff5700, #fea700, #fff700, #6fff00, #09d82e, #2254cf, #5819ec); }81.5% { background-image: linear-gradient(#9c00c3, #d1005b, #fe0c00, #ff5b01, #ffab00, #fffc01, #67fe00, #09d238, #234dd7, #5c18eb); }82.0% { background-image: linear-gradient(#9f00bd, #d40054, #ff1001, #ff5f00, #ffaf00, #ffff01, #5fff01, #0aca3f, #2546df, #5f16e9); }82.5% { background-image: linear-gradient(#a200b8, #d7004e, #ff1400, #ff6300, #ffb200, #f8ff01, #58ff01, #0cc546, #2540e7, #6115e9); }83.0% { background-image: linear-gradient(#a400b3, #da004c, #ff1901, #ff6801, #ffb700, #efff00, #4fff00, #0dbd50, #2639ef, #6613e7); }83.5% { background-image: linear-gradient(#a700af, #dc0046, #ff1c01, #ff6b01, #ffbb00, #e8ff01, #47ff01, #0db756, #2a34f8, #6a11e5); }84.0% { background-image: linear-gradient(#aa00a9, #df003f, #ff2000, #ff7000, #ffbe00, #dffe00, #40ff01, #11b060, #2b2cff, #6b11e3); }84.5% { background-image: linear-gradient(#ab00a4, #e0013a, #ff2300, #ff7300, #ffc301, #d7ff00, #37ff00, #11aa67, #2e2bfe, #6f0fe2); }85.0% { background-image: linear-gradient(#af009f, #e40035, #ff2801, #fe7800, #ffc700, #cffe00, #30ff01, #13a370, #2f29fb, #740de2); }85.5% { background-image: linear-gradient(#b10098, #e6002f, #ff2c00, #ff7b00, #fecb00, #c7ff00, #27fe00, #149c76, #3528fb, #760ce0); }86.0% { background-image: linear-gradient(#b40095, #e9002b, #ff3000, #ff7f00, #ffcf01, #c0ff00, #1fff00, #169580, #3727fb, #790bde); }86.5% { background-image: linear-gradient(#b60090, #eb0025, #ff3401, #ff8201, #ffd300, #b8ff00, #18ff01, #168f86, #3925f8, #7e0add); }87.0% { background-image: linear-gradient(#ba0089, #ef0020, #ff3800, #ff8700, #ffd801, #afff00, #0fff00, #18898f, #3e24f7, #8008db); }87.5% { background-image: linear-gradient(#bb0085, #f0001b, #fe3c00, #ff8b00, #ffdb01, #a8ff00, #08ff00, #198297, #4022f4, #8307d9); }88.0% { background-image: linear-gradient(#be0080, #f30014, #fe4101, #ff8e01, #ffdf00, #9ffe00, #00ff01, #197b9e, #4321f4, #8806da); }88.5% { background-image: linear-gradient(#c10079, #f6000f, #ff4401, #ff9400, #ffe200, #98ff00, #01f809, #1b75a7, #4820f3, #8a04d7); }89.0% { background-image: linear-gradient(#c30174, #fa000c, #ff4700, #ff9700, #ffe701, #8ffe01, #02f10f, #1d6eaf, #4b1ff2, #8d03d5); }89.5% { background-image: linear-gradient(#c60071, #fb0005, #ff4b00, #ff9a00, #ffeb00, #87ff00, #05eb19, #1f68b7, #4e1ef0, #9101d4); }90.0% { background-image: linear-gradient(#c9006a, #fe0000, #ff4f01, #ff9f00, #ffef01, #80ff00, #05e620, #1f61bf, #521cee, #9400d4); }90.5% { background-image: linear-gradient(#cc0064, #ff0401, #ff5301, #ffa300, #fff301, #77ff00, #06dd27, #205ac6, #551aee, #9601cf); }91.0% { background-image: linear-gradient(#ce0160, #ff0800, #ff5700, #fea700, #fff700, #6fff00, #09d82e, #2254cf, #5819ec, #9901c8); }91.5% { background-image: linear-gradient(#d1005b, #fe0c00, #ff5b01, #ffab00, #fffc01, #67fe00, #09d238, #234dd7, #5c18eb, #9c00c3); }92.0% { background-image: linear-gradient(#d40054, #ff1001, #ff5f00, #ffaf00, #ffff01, #5fff01, #0aca3f, #2546df, #5f16e9, #9f00bd); }92.5% { background-image: linear-gradient(#d7004e, #ff1400, #ff6300, #ffb200, #f8ff01, #58ff01, #0cc546, #2540e7, #6115e9, #a200b8); }93.0% { background-image: linear-gradient(#da004c, #ff1901, #ff6801, #ffb700, #efff00, #4fff00, #0dbd50, #2639ef, #6613e7, #a400b3); }93.5% { background-image: linear-gradient(#dc0046, #ff1c01, #ff6b01, #ffbb00, #e8ff01, #47ff01, #0db756, #2a34f8, #6a11e5, #a700af); }94.0% { background-image: linear-gradient(#df003f, #ff2000, #ff7000, #ffbe00, #dffe00, #40ff01, #11b060, #2b2cff, #6b11e3, #aa00a9); }94.5% { background-image: linear-gradient(#e0013a, #ff2300, #ff7300, #ffc301, #d7ff00, #37ff00, #11aa67, #2e2bfe, #6f0fe2, #ab00a4); }95.0% { background-image: linear-gradient(#e40035, #ff2801, #fe7800, #ffc700, #cffe00, #30ff01, #13a370, #2f29fb, #740de2, #af009f); }95.5% { background-image: linear-gradient(#e6002f, #ff2c00, #ff7b00, #fecb00, #c7ff00, #27fe00, #149c76, #3528fb, #760ce0, #b10098); }96.0% { background-image: linear-gradient(#e9002b, #ff3000, #ff7f00, #ffcf01, #c0ff00, #1fff00, #169580, #3727fb, #790bde, #b40095); }96.5% { background-image: linear-gradient(#eb0025, #ff3401, #ff8201, #ffd300, #b8ff00, #18ff01, #168f86, #3925f8, #7e0add, #b60090); }97.0% { background-image: linear-gradient(#ef0020, #ff3800, #ff8700, #ffd801, #afff00, #0fff00, #18898f, #3e24f7, #8008db, #ba0089); }97.5% { background-image: linear-gradient(#f0001b, #fe3c00, #ff8b00, #ffdb01, #a8ff00, #08ff00, #198297, #4022f4, #8307d9, #bb0085); }98.0% { background-image: linear-gradient(#f30014, #fe4101, #ff8e01, #ffdf00, #9ffe00, #00ff01, #197b9e, #4321f4, #8806da, #be0080); }98.5% { background-image: linear-gradient(#f6000f, #ff4401, #ff9400, #ffe200, #98ff00, #01f809, #1b75a7, #4820f3, #8a04d7, #c10079); }99.0% { background-image: linear-gradient(#fa000c, #ff4700, #ff9700, #ffe701, #8ffe01, #02f10f, #1d6eaf, #4b1ff2, #8d03d5, #c30174); }99.5% { background-image: linear-gradient(#fb0005, #ff4b00, #ff9a00, #ffeb00, #87ff00, #05eb19, #1f68b7, #4e1ef0, #9101d4, #c60071); }
+    
+    
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+}
+    
+    
+    /*
+h1 {
+    background: linear-gradient(270deg, rgb(255, 0, 0), rgb(255, 133, 0), rgb(255, 234, 0), rgb(29, 255, 0), rgb(0, 145, 255), rgb(114, 0, 255), rgb(255, 0, 216)) 0% 0% / 700% 700%; animation: 10s ease 0s infinite normal none running CustomAnimation;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    }
+    */
+    
+h1 {
+    background: red;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+    
+</style>
+    
+    <style class = "keyframe-style" id = "customAnimation" type = "text/css">@keyframes CustomAnimation {0% {background-position:0% 50%;}50% {background-position:100% 50%;}100% {background-position:0% 50%;}}</style>
+</head>
+    
+    
+
+    
+    
+<body span class="rainbow">
+
+
+<!-- regular gradient background
+<body style="background: linear-gradient(red, orange, yellow, green, blue, purple);">
+-->
+    
+    
+<!-- words that website displays -->
+<div class = "fuckyouwords">
+    <h1 id="mobileOrNot"><b>YEE HAW</b></h1>
+    </div>
+    
+    <p style="position: absolute; bottom: 0; right: 1vw;"><b><a href="./poll.html">VOTE FOR JULY 22</a></b></p>
+    
+<!-- function that immediately checks for browser type based on window height and width -->
+<script> function checkDevice(){if(window.innerHeight > window.innerWidth){document.getElementById("mobileOrNot").style.fontSize = "20vw";} else{document.getElementById("mobileOrNot").style.fontSize = "5vw";}} checkDevice()</script>
+    
+<!-- event listener that looks for orientation changes on mobile to stay responsive yurr-->  
+<script>window.addEventListener("orientationchange", checkMobile)
+    function checkMobile(){
+    if((screen.orientation.angle == 0) || (screen.orientation.angle == 180)){document.getElementById("mobileOrNot").style.fontSize = "20vw";} else{document.getElementById("mobileOrNot").style.fontSize = "5vw";}}
+    </script>    
+
+
+    <style>
+  #snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+  }
+
+  .snowflake {
+    position: fixed;
+
+    user-select: none;
+    z-index: 1000;
+    pointer-events: none;
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+  }
+</style>
+
+<div id="snowflakeContainer">
+  <img class="snowflake" src="cowboy.png"></img>
+</div>
+
+<script>
+  // Array to store our Snowflake objects
+  var snowflakes = [];
+
+  // Global variables to store our browser's window size
+  var browserWidth;
+  var browserHeight;
+
+  // Specify the number of snowflakes you want visible
+  var numberOfSnowflakes = 39;
+
+  // Flag to reset the position of the snowflakes
+  var resetPosition = false;
+
+  // Handle accessibility
+  var enableAnimations = false;
+  var reduceMotionQuery = matchMedia("(prefers-reduced-motion)");
+
+  // Handle animation accessibility preferences 
+  function setAccessibilityState() {
+    if (reduceMotionQuery.matches) {
+      enableAnimations = false;
+    } else { 
+      enableAnimations = true;
+    }
+  }
+  setAccessibilityState();
+
+  reduceMotionQuery.addListener(setAccessibilityState);
+
+  //
+  // It all starts here...
+  //
+  function setup() {
+    if (enableAnimations) {
+      window.addEventListener("DOMContentLoaded", generateSnowflakes, false);
+      window.addEventListener("resize", setResetFlag, false);
+    }
+  }
+  setup();
+
+  //
+  // Constructor for our Snowflake object
+  //
+  function Snowflake(element, speed, xPos, yPos) {
+    // set initial snowflake properties
+    this.element = element;
+    this.speed = speed;
+    this.xPos = xPos;
+    this.yPos = yPos;
+    this.scale = 1;
+
+    // declare variables used for snowflake's motion
+    this.counter = 0;
+    this.sign = Math.random() < 0.5 ? 1 : -1;
+
+    // setting an initial opacity and size for our snowflake
+    this.element.style.opacity = 1;
+  }
+
+  //
+  // The function responsible for actually moving our snowflake
+  //
+  Snowflake.prototype.update = function () {
+    // using some trigonometry to determine our x and y position
+    this.counter += this.speed / 5000;
+    this.xPos += this.sign * this.speed * Math.cos(this.counter) / 40;
+    this.yPos += Math.sin(this.counter) / 40 + this.speed / 30;
+    this.scale = .5 + Math.abs(10 * Math.cos(this.counter) / 20);
+
+    // setting our snowflake's position
+    setTransform(Math.round(this.xPos), Math.round(this.yPos), this.scale, this.element);
+
+    // if snowflake goes below the browser window, move it back to the top
+    if (this.yPos > browserHeight) {
+      this.yPos = -50;
+    }
+  }
+
+  //
+  // A performant way to set your snowflake's position and size
+  //
+  function setTransform(xPos, yPos, scale, el) {
+    el.style.transform = `translate3d(${xPos}px, ${yPos}px, 0) scale(${scale}, ${scale})`;
+  }
+
+  //
+  // The function responsible for creating the snowflake
+  //
+  function generateSnowflakes() {
+
+    // get our snowflake element from the DOM and store it
+    var originalSnowflake = document.querySelector(".snowflake");
+
+    // access our snowflake element's parent container
+    var snowflakeContainer = originalSnowflake.parentNode;
+    snowflakeContainer.style.display = "block";
+
+    // get our browser's size
+    browserWidth = document.documentElement.clientWidth;
+    browserHeight = document.documentElement.clientHeight;
+
+    // create each individual snowflake
+    for (var i = 0; i < numberOfSnowflakes; i++) {
+
+      // clone our original snowflake and add it to snowflakeContainer
+      var snowflakeClone = originalSnowflake.cloneNode(true);
+      snowflakeContainer.appendChild(snowflakeClone);
+
+      // set our snowflake's initial position and related properties
+      var initialXPos = getPosition(50, browserWidth);
+      var initialYPos = getPosition(50, browserHeight);
+      var speed = 5 + Math.random() * 40;
+
+      // create our Snowflake object
+      var snowflakeObject = new Snowflake(snowflakeClone,
+        speed,
+        initialXPos,
+        initialYPos);
+      snowflakes.push(snowflakeObject);
+    }
+
+    // remove the original snowflake because we no longer need it visible
+    snowflakeContainer.removeChild(originalSnowflake);
+
+    moveSnowflakes();
+  }
+
+  //
+  // Responsible for moving each snowflake by calling its update function
+  //
+  function moveSnowflakes() {
+
+    if (enableAnimations) {
+      for (var i = 0; i < snowflakes.length; i++) {
+        var snowflake = snowflakes[i];
+        snowflake.update();
+      }      
+    }
+
+    // Reset the position of all the snowflakes to a new value
+    if (resetPosition) {
+      browserWidth = document.documentElement.clientWidth;
+      browserHeight = document.documentElement.clientHeight;
+
+      for (var i = 0; i < snowflakes.length; i++) {
+        var snowflake = snowflakes[i];
+
+        snowflake.xPos = getPosition(50, browserWidth);
+        snowflake.yPos = getPosition(50, browserHeight);
+      }
+
+      resetPosition = false;
+    }
+
+    requestAnimationFrame(moveSnowflakes);
+  }
+
+  //
+  // This function returns a number between (maximum - offset) and (maximum + offset)
+  //
+  function getPosition(offset, size) {
+    return Math.round(-1 * offset + Math.random() * (size + 2 * offset));
+  }
+
+  //
+  // Trigger a reset of all the snowflakes' positions
+  //
+  function setResetFlag(e) {
+    resetPosition = true;
+  }
+</script>
+    
+    
+    
+    
+    
+</body>
+</html>
